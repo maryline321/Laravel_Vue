@@ -30,7 +30,7 @@ const { storeCompany} =useCompanies();
     {
     'name':'',
     'email':'',
-    'address':'',
+    'address':'', 
     'website':'',
     }
  )
