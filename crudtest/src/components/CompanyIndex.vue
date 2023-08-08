@@ -2,7 +2,8 @@
 
     <div style="margin: 40px;">
    
-         <RouterLink to="/createcompany" class="btn btn-primary">Add Company</RouterLink>
+        <!-- <RouterLink :to="{ name: 'createCompany' }" class="btn btn-primary">Create Company</RouterLink> -->
+        <a href="/createcompany" class="btn btn-primary">Create Company</a>
         <table class="table table-bordered">
             <thead>
               <tr>
@@ -10,7 +11,7 @@
                 <th scope="col">Email</th>
                 <th scope="col">Address</th>
                 <th scope="col">Website</th>
-                <th></th>
+                 <th>Actions</th>
               </tr>
             </thead>
             <tbody>             
@@ -33,6 +34,7 @@
 
 <script setup>
 
+import { RouterLink } from 'vue-router';
 import useCompanies from '../composible/company';
 import { onMounted } from 'vue';
 

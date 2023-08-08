@@ -19,7 +19,7 @@ Route::get('/company/{id}', [CompanyController::class, 'getCompany']);
 Route::post('/createCompany', [CompanyController::class, 'createCompany']);
 Route::get('/companies', [CompanyController::class, 'getCompanies']);
 Route::put('/company/{id}', [CompanyController::class, 'updateCompany']);
-Route::get('/company/{id}', [CompanyController::class, 'deleteCompany']);
+Route::delete('/company/{id}', [CompanyController::class, 'deleteCompany']);
 
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {

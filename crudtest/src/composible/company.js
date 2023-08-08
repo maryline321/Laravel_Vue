@@ -1,10 +1,12 @@
 import { ref } from "vue";
 import axios from "axios";
+import { useRouter } from "vue-router";
 
 export default function useCompanies()
 {
 
     const companies = ref([])
+    const router= useRouter()
 
     async function getCompanies (){
 
@@ -13,7 +15,11 @@ export default function useCompanies()
 
     }
 
-    const destroyCompany = async(id) => {
+    const storeCompany = async (data) => {
+        await axios.post('http://127.0.0.1:8000/api/createCompany/')
+        await router.push({name: 'companyIndex'})
+    }
+    const destroyCompany = async (id) => {
         await axios.delete('http://127.0.0.1:8000/api/company/' + id)
     }
 
@@ -21,6 +27,7 @@ export default function useCompanies()
 
         companies,
         getCompanies,
-        destroyCompany
+        destroyCompany,
+        storeCompany
     }
 }
