@@ -1,9 +1,9 @@
 <script setup>
-import TheWelcome from '../components/TheWelcome.vue'
+// import CompanyIndex from "../components/CompanyIndex.vue"
 </script>
 
 <template>
-  <main>
-    <TheWelcome />
-  </main>
+  <!-- <div>
+    <CompanyIndex></CompanyIndex>
+  </div> -->
 </template>

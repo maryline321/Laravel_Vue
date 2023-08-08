@@ -37,7 +37,7 @@ class CompanyController extends Controller
     {
         $companies=Company::all();
 
-        return response()->json([$companies],status: 200);
+        return response()->json($companies,status: 200);
         return  $companies;
     }
 
