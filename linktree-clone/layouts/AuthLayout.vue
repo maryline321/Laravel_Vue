@@ -4,34 +4,44 @@
         <nuxt-link to="/">
           <img src="../assets/images/linktree-logo.png" alt="Logo">
         </nuxt-link>
-<!-- 
+
         <main>
             <div>
                 <slot />
             </div>
-        </main> -->
+        </main>
       </div>
 
-      <!-- <div class="">
-        <img v-if="route.fullPath === '/'" class="" :src="require('../assets/images/side1.png')" />
-        <img v-else class="" :src="require('../assets/images/side2.png')" />
-        
-      </div> -->
+      <div class="">
+
+        <!-- <img 
+            v-if="route.fullPath ==='/'"
+            class="" 
+            src="../assets/images/side1.png"       
+
+        />
+        <img 
+            v-else
+            class="" 
+            src="../assets/images/side1.png"       
+
+        /> -->
+      </div>
     </div>
   </template>
 
 <script setup>
 
 
-// import {useUserStore } from '../stores/user'
-// import {storeToRefs} from 'pinia'
-// const userStore = useUserStore()
-// const {updatedLinkId} = storeToRefs(userStore)
-// const route =useRoute()
+import {useUserStore } from '../stores/user'
+import {storeToRefs} from 'pinia'
+const userStore = useUserStore()
+const {updatedLinkId} = storeToRefs(userStore)
+const route =useRoute()
 
-// onUnmounted(() => {
-//     updatedLinkId.value=0
-// })
+onUnmounted(() => {
+    updatedLinkId.value=0
+})
 
 </script>
 
