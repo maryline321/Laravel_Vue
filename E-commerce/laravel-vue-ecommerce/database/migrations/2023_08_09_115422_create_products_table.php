@@ -19,11 +19,11 @@ return new class extends Migration
             $table->String('image',2000)->nullable();
             $table->String('image_mime')->nullable();
             $table->String('image_size')->nullable();
-            $table->String('image_description')->nullable();
+            $table->String('description')->nullable();
             $table->String('price', 10, 2);
             $table->foreignIdFor(User::class, 'created_by')->nullable();
             $table->foreignIdFor(User::class, 'updated_by')->nullable();
-            $table->softDelete();
+            $table->softDeletes();
             $table->foreignIdFor(User::class, 'deleted_by')->nullable();
             $table->timestamps();
         });
