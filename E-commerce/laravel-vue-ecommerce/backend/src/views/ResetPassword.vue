@@ -1,15 +1,6 @@
 <template>
 
-    <section class=" text-center text-lg-start">
-        <div class="card mb-3">
-          <div class="row g-0 d-flex align-items-center">
-            <div class="col-lg-4 d-none d-lg-flex">
-              <img src="https://mdbootstrap.com/img/new/ecommerce/vertical/004.jpg" alt="Trendy Pants and Shoes"
-                class="w-100 rounded-t-5 rounded-tr-lg-0 rounded-bl-lg-5" />
-            </div>
-            <div class="col-lg-8">
-              <div class="card-body py-5 px-md-5">
-                <h1 class="row mb-4 " style="font-weight:bolder;text-align:center;">Set new password </h1>
+                <GuestLayout title="Set new password">
 
                 <form>
                   
@@ -35,22 +26,15 @@
                   <button type="button" class="btn btn-primary btn-block mb-4" style="width: 100%;">Submit</button>
       
                 </form>
-      
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+            </GuestLayout>
+    
     
     </template>
     
-    <script>
-    
-    export default{
-    
-    name: "Login"
-    }
-    
+    <script setup>
+    import GuestLayout from '../components/GuestLayout.vue';
+
+
     </script>
     
     <style scoped>
