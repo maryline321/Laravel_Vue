@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\CustomApi\CustomAuthControllerController;
+use App\Http\Controllers\CustomApi\ProductController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -20,6 +21,8 @@ Route::middleware('auth:sanctum', 'admin')-> group(function()
 
 Route::get('/user', [CustomAuthControllerController::class, 'getUser']);
 Route::post('/logout', [CustomAuthControllerController::class, 'logout']);
+
+Route::apiResource('products', ProductController::class);
 
 }
 );
