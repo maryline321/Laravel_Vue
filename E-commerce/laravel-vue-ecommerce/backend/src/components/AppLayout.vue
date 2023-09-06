@@ -2,7 +2,7 @@
 
     <div>
 
-        <Sidebar !sidebarOpened/>
+        <Sidebar :class = "{'':!sidebarOpened}"/>
 
 
 
@@ -25,7 +25,7 @@
 </template>
 
 <script setup>
-import {ref, computed, onMounted, onUnmounted} from 'vue'
+import {ref} from 'vue'
 import Sidebar from "./Sidebar.vue";
 import Navbar from "./Navbar.vue";
 
@@ -35,4 +35,5 @@ const sidebarOpened = ref(true);
 function toggleSidebar() {
   sidebarOpened.value = !sidebarOpened.value
 }
+
 </script>
