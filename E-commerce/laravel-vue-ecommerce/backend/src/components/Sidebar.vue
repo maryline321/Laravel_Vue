@@ -44,19 +44,10 @@
                     <router-link class="nav-link" :to="{name: 'app.orders'}">
                         <i class="fas fa-fw fa-table"></i><span>Orders</span></router-link>
             </li>
-            <li class="nav-item">
-    
-                <router-link class="nav-link" :to="{name: 'app.users'}">
-                    <i class="fas fa-fw fa-table"></i><span>Users</span></router-link>
-        </li>
+           
         <li class="nav-item">
     
-            <router-link class="nav-link" :to="{name: 'app.customers'}">
-                <i class="fas fa-fw fa-table"></i><span>Customers</span></router-link>
-    </li>
-        <li class="nav-item">
-    
-            <router-link class="nav-link" :to="{name: 'reports.orders'}">
+            <router-link class="nav-link" :to="{name: 'app.reports'}">
                 <i class="fas fa-fw fa-table"></i><span>Reports</span></router-link>
     </li>
 
@@ -94,6 +85,7 @@
         width: 100%;
         overflow-x: hidden;
     }
+    
     
     body {
         margin-left: 0;

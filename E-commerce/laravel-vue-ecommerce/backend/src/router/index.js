@@ -7,6 +7,10 @@ import AppLayout from '../components/AppLayout.vue'
 import store from "../store"
 import NotFound from "../views/NotFound.vue";
 import Products from "../views/Products/Products.vue"
+import Orders from "../views/Orders/Orders.vue"
+import OrderView from "../views/Orders/Orders.vue"
+import Report from "../views/Reports/Report.vue"
+
 
 const routes = [
 
@@ -29,6 +33,24 @@ const routes = [
                 path: '/products',
                 name: 'app.products',
                 component: Products
+            },
+            {
+
+                path: '/orders',
+                name: 'app.orders',
+                component: Orders
+            },
+            {
+
+                path: '/orders/:id',
+                name: 'app.orders.view',
+                component: OrderView
+            },
+            {
+
+                path: '/reports',
+                name: 'app.reports',
+                component: Report
             },
             
         ]  
