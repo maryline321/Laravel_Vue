@@ -13,10 +13,15 @@
                                         <table class="table table-bordered">
                                             <thead>
                                               <tr>
-                                                <th scope="col">#</th>
-                                                <th scope="col">First</th>
-                                                <th scope="col">Last</th>
-                                                <th scope="col">Handle</th>
+                                                <th scope="col">ID</th>
+                                                <th scope="col">Image</th>
+                                                <th scope="col">Title</th>
+                                                <th scope="col">Price</th>
+                                                <th scope="col">Last Updated</th>
+                                                <th scope="col">Actions</th>
+
+
+
                                               </tr>
                                             </thead>
                                             <tbody>
@@ -25,18 +30,11 @@
                                                 <td>Mark</td>
                                                 <td>Otto</td>
                                                 <td>@mdo</td>
+                                                <td>@mdo</td>
+                                                <td>@mdo</td>
                                               </tr>
-                                              <tr>
-                                                <th scope="row">2</th>
-                                                <td>Jacob</td>
-                                                <td>Thornton</td>
-                                                <td>@fat</td>
-                                              </tr>
-                                              <tr>
-                                                <th scope="row">3</th>
-                                                <td colspan="2">Larry the Bird</td>
-                                                <td>@twitter</td>
-                                              </tr>
+                                          
+                                             
                                             </tbody>
                                           </table>
                                      
